@@ -1,0 +1,266 @@
+/* 
+Paleta de colores
+#77D9D9
+#12334C
+#F2DA63 
+#A0F2BD
+#FFFFFF
+*/
+body{
+    width: 100%; height: auto;
+    margin: 0 auto;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+header{
+    background-color: rgb(83, 172, 223);
+    height: 110px; width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+nav{
+    height: 80px; width: 70%;
+    float: right;
+    margin-right: 10px; margin-left: 10px;
+    padding: 5px;
+}
+nav .Menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+nav .Menu li{
+    
+    text-decoration: none;
+    text-transform: lowercase;
+    margin: 10px;
+}
+nav .Menu li a{
+    text-decoration: none;
+    background-color: rgb(234, 250, 115);
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #12334C;
+    text-shadow: 2px 2px #ffbd2f;
+}
+nav .Menu li:hover
+{  
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    transform:scale(1.25);
+}
+#logo{
+    width: 90%;
+    margin-left: 15px;
+}
+
+
+.select{
+    margin-right: 40px;
+    margin-left: 60px;
+    margin-top: 0;
+    display: none;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #12334C;
+}
+.select > li{
+    background-color: rgb(234, 250, 115);
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+}
+.select li{
+    margin-bottom: 1.3vh;
+}
+.select li ul{
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(234, 250, 115, 0.486);
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+.select li ul a{
+    text-decoration: none;
+    
+    color: #12334C;
+    text-shadow: 2px 2px #ffbd2f;
+    display: block;
+}
+
+.select ul li:hover {
+    background-color: rgb(250, 236, 115);
+}
+.select li:hover > ul{
+    display: block;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+h1
+{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    color: #12334C;
+    padding: 0;
+    font-size: 70px;
+}
+
+.tarjeta{
+    height: 330px;
+    background-color: #A0F2BD;
+    margin: 1.5vh 2vw;
+    border-radius: 25px;
+    display: flex;
+}
+.tarjeta
+{
+    opacity: .5;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+.tarjeta.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+.img{
+    margin: 3vh 3vw 3vh 3vw;
+    width: 30%; height: 100%;
+    height: 200px;
+}
+.img img{
+    width: 100%; 
+    border-radius: 25px;
+}
+.info{
+    font-family: Nunito ExtraLight;
+    font-weight: 100;
+    font-size: 1.15em;
+    color: #12334C;
+}
+.info p{
+    font-weight: 400;
+}
+.info h1{
+    font-size: 30px;
+}
+.Fin{
+    margin-bottom: 100px;
+}
+
+.social
+{
+    margin: 10px;
+    width: 60px; height: 60px;
+    border-radius: 100%;
+}
+a img
+{
+    width: 100%;
+}
+.Nombre{
+    position: absolute;
+    right: 0;
+    margin-right: 20px; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+footer{
+    background-color: rgb(83, 172, 223);
+    width: 100%;
+    display: flex;
+    margin-top: 5vh;
+}
+@media(min-width: 0px) and (max-width:2000px){
+    .img{
+        margin: 3vh 3vw 3vh 3vw;
+        width: 30%; height: 100%;
+        height: auto;
+    }
+    .img img{
+        width: 100%;
+    }
+    .tarjeta
+    {
+        height: auto;
+    }
+}
+@media(min-width: 0px) and (max-width:970px){
+    nav{
+        float: none;
+        width: auto;
+    }
+    .select{
+        display: inline;
+    }
+    nav .Menu{
+        display: none;
+    }
+}
+@media(min-width: 0px) and (max-width:776px){
+    nav{
+        float: none;
+        width: auto;
+    }
+    .select{
+        display: inline;
+    }
+    nav .Menu{
+        display: none;
+    }
+    .img{
+        width: 45%; height: auto;
+        margin-bottom: 5hv;
+    }
+    .info{
+        width: 55%;
+    }
+}
+@media(min-width: 0px) and (max-width:481px){
+    nav{
+        float: none;
+        width: auto;
+    }
+    .select{
+        display: inline;
+    }
+    nav .Menu{
+        display: none;
+    }
+
+    .img{
+        width: 94%; height: auto;
+        margin-bottom: 5hv;
+    }
+    .Nombre{
+        width: 10%;
+        margin-right: 9vw;
+    }
+    .tarjeta{
+        flex-direction: column;
+        height: auto;
+        justify-items: center;
+        justify-content: center;
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+    .info{
+        font-family: Nunito ExtraLight;
+        font-weight: 100;
+        color: #12334C;
+        margin: 0 3vw 4vh 3vw;
+        width: 100%;
+    }
+    .info p{
+        font-weight: 400;
+    }
+    .info h1{
+        font-size: 30px;
+        text-align: left;
+        width: 95%;
+    }
+}

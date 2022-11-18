@@ -1,0 +1,503 @@
+body{
+    width: 100%; height: 100%;
+
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(83, 172, 223);
+    height: 110px; width: 100%;
+    display: flex;
+    padding-top: 30px;
+}
+nav{
+    height: 80px; width: 70%;
+    float: right;
+    margin-right: 10px; margin-left: 10px;
+    padding: 5px;
+}
+nav .Menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+nav .Menu li{
+    
+    text-decoration: none;
+    text-transform: lowercase;
+    margin: 10px;
+}
+nav .Menu li a{
+    text-decoration: none;
+    background-color: rgb(234, 250, 115);
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #12334C;
+    text-shadow: 2px 2px #ffbd2f;
+}
+nav .Menu li:hover
+{  
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    transform:scale(1.25);
+}
+#logo{
+    width: 90%;
+    margin-left: 15px;
+}
+
+
+.select{
+    margin-right: 40px;
+    margin-left: 60px;
+    margin-top: 0;
+    display: none;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #12334C;
+}
+.select > li{
+    background-color: rgb(234, 250, 115);
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+}
+.select li{
+    margin-bottom: 1.3vh;
+}
+.select li ul{
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(234, 250, 115, 0.486);
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+.select li ul a{
+    text-decoration: none;
+    
+    color: #12334C;
+    text-shadow: 2px 2px #ffbd2f;
+    display: block;
+}
+
+.select ul li:hover {
+    background-color: rgb(250, 236, 115);
+}
+.select li:hover > ul{
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #12334C;
+}
+/*------------------------------------------------------------------------------------------------*/
+.Personajes{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes2{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes3{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes4{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes5{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes6{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes7{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes8{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px; 
+
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes9{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes10{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+}
+.Personajes11{
+    display: flex;
+    flex-direction: row;
+    height: 300px; 
+    margin: 1.5vh 6vw;
+    border-radius: 20px;
+    justify-content:space-around;
+    padding: 3vh 0 3vh 0;
+    align-items: center;
+}
+/*------------------------------------------------------------------------------------------------*/
+.ImgIzq
+{
+    height: 100%;
+}
+.ImgDer
+{
+    height: 100%;
+}
+.tarI img
+{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+.tarI img.visible{
+    opacity: 1;
+    transform: scale(1);
+    transform: translateX(50px);
+}
+.tar1{
+    margin: 0 2vw;
+    width: 60%;
+}
+.tar2{
+    margin: 0 2vw;
+    width: 40%;
+}
+.tar1 h2, p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #12334C;
+}
+.tar2 h2, p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #12334C;
+}
+.Cont_Tar{
+    background-color: #ffbd2f;
+    width: 100%; height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+    text-align: justify;
+    margin-left: 5vw;
+}
+.FIN{
+    margin-bottom: 100px;
+}
+.social
+{
+    margin: 10px;
+    width: 60px; height: 60px;
+    border-radius: 100%;
+}
+a img
+{
+    width: 100%;
+}
+.Nombre{
+    position: absolute;
+    right: 0;
+    margin-right: 20px; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+footer{
+    background-color: rgb(83, 172, 223);
+    width: 100%;
+    display: flex;
+
+    margin-top: 5vh;
+}
+@media(min-width: 0px) and (max-width:1170px){
+    .Cont_Tar{
+        height: auto;
+    }
+    .ImgIzq{
+        margin-right: 3vw;
+    }
+    .tarI img
+    {
+        width:200px ;
+    }
+    .Personajes{
+        height: auto;
+    }
+    .Personajes2{
+        height: auto;
+    }
+    .Personajes3{
+        height: auto;
+    }
+    .Personajes4{
+        height: auto;
+    }
+    .Personajes5{
+        height: auto;
+    }
+    .Personajes6{
+        height: auto;
+    }
+    .Personajes7{
+        height: auto;
+    }
+    .Personajes8{
+        height: auto;
+    }
+    .Personajes9{
+        height: auto;
+    }
+    .Personajes10{
+        height: auto;
+    }
+    .Personajes11{
+        height: auto;
+    }
+
+}
+@media(min-width: 0px) and (max-width:970px){
+    nav{
+        float: none;
+        width: auto;
+    }
+    .select{
+        display: inline;
+    }
+    nav .Menu{
+        display: none;
+    }
+}
+@media(min-width: 0px) and (max-width:776px){
+    .Nombre{
+        width: 10%;
+        margin-right: 9vw;
+    }
+    .tarI img
+    {
+        width:100%;
+    }
+    .Personajes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes4{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes5{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes6{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes7{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes8{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes9{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes10{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes11{
+        flex-direction: column;
+        height: auto;
+    }
+    .Cont_Tar{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tar2{
+        text-align: left;
+    }
+}
+@media(min-width: 0px) and (max-width:481px){
+    nav{
+        float: none;
+        width: auto;
+    }
+    .select{
+        display: inline;
+    }
+    nav .Menu{
+        display: none;
+    }
+    .Nombre{
+        width: 10%;
+        margin-right: 9vw;
+    }
+    .Personajes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes4{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes5{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes6{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes7{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes8{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes9{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes10{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .Personajes11{
+        flex-direction: column;
+        height: auto;
+    }
+    .Cont_Tar{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tar2{
+        text-align: left;
+    }
+}
